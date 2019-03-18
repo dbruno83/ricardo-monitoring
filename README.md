@@ -13,15 +13,15 @@ Contient les énumération du projet pour les bonnes pratiques
 Contient deux webservices
 Affichages des changements dans le CRUD :
 /displayRows
-example : localhost:8080/ricardo-monitoring/displayRows
+example : localhost:8080/ricardo-monitoring/api/displayRows
 Insertion dans la base de donnée
 /updateRows
-example : localhost:8080/ricardo-monitoring/updateRows?id=2
+example : localhost:8080/ricardo-monitoring/api/updateRows?id=2
 
-#src/utils
+* src/utils
 Contient des Utilitaires d'affichage pour éviter la duplication de code
 
-#src/mockbdd
+* src/mockbdd
 Simule une base de donnée avec une liste de rows
 Contient deux méthodes
 Insérer une ligne
@@ -39,6 +39,6 @@ Upload le war généré dans le repertoire target dans un serveur d'application 
 
 # Reste à faire : 
 
-- Amélioration du package DTO (redondance id)
-- Création d'autres services du CRUD (uniquement update pour le moment)
-- Pousser le testing
+* Amélioration du package DTO (redondance id)
+* Création d'autres services du CRUD (uniquement update pour le moment)
+* Pousser le testing
