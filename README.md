@@ -1,14 +1,7 @@
 # ricardo-monitoring
 ricardo-monitoring
-Bonjour,
 
-Vous trouverez ci joint l'avancement de mes travaux,
-
-N'ayant pas eu le bonheur d'utiliser mon pc de travail, du temps a été consommé sur l'installation des jre/jdk et IDE sur mon pc personnel non prévu au développement, j'étais d'abord partit pour travailler sur un couple Netbeans/Glassfish pour ensuite m'orienter vers Eclipse/Tomcat, les temps de configurations fut élevés.
-
-Suite à quelques recherches l'API jax rs a été choisit (intégré par un .jar) pour implémenter les WebServices REST, cependant bien que le serveur TOMCAT fut correctemment démarré et l'application web bien présente dans l'app manager de Tomcat, je n'ai pu réussir a accéder (État HTTP 404 – Not Found) à l'application et donc tester les services.
-
-Je vous joint tout de meme mon avancé et ce readme.
+= Architecture
 
 #src/dto
 Contient les DTO du projet et implémentation de l'interface Cloneable
@@ -35,11 +28,16 @@ Contient deux méthodes
 Insérer une ligne
 Obtenir une ligne à partir de son id et non taggé à "supprimé"
 
-Reste à faire : - Amélioration du package DTO (redondance id)
+=Usage
+
+-Build
+
+Se placer dans le repertoire tools et executer le build.bat
+
+-Run
+
+Upload le war généré dans le repertoire target dans un serveur d'application (ex : Tomcat)
+
+-Reste à faire : - Amélioration du package DTO (redondance id)
 - Création d'autres services du CRUD (uniquement update pour le moment)
-- Ant,Build.bat
-- Configuration Tomcat pour faire fonctionner les services (actuellement erreur 404)
-
-Je restes disponible pour toutes questions.
-
-Merci
+- Pousser le testing
